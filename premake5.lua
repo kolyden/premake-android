@@ -32,9 +32,5 @@ project "AndroidNative.Packaging"
 	kind "Packaging"
 	androidapplibname "AndroidNative.NativeActivity"
 	links "AndroidNative.NativeActivity"
-	files {
-		"res/**",
-		"AndroidManifest.xml",
-		"build.xml",
-		"project.properties"
-	}
+	files "android/**"
+	vpaths { ["*"] = "android" }	
