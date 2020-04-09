@@ -15,6 +15,20 @@
 *
 */
 
+#include <jni.h>
+#include <errno.h>
+
+#include <string.h>
+#include <unistd.h>
+#include <sys/resource.h>
+
+#include <EGL/egl.h>
+#include <GLES/gl.h>
+
+#include <android/sensor.h>
+
+#include <android/log.h>
+#include "android_native_app_glue.h"
 #include <malloc.h>
 
 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "AndroidProject1.NativeActivity", __VA_ARGS__))

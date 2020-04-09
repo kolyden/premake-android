@@ -19,8 +19,6 @@ workspace "AndroidNative"
 project "AndroidNative.NativeActivity"
 	kind "SharedLib"
 	files "src/**"
-	removefiles "src/pch.h"
-	pchheader "../src/pch.h"
 	includedirs {
 		"$(StlIncludeDirectories)",
 		"$(Sysroot)/usr/include",
